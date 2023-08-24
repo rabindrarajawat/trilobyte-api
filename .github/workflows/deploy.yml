@@ -22,4 +22,4 @@ jobs:
 
       - name: Deploy to Lambda
         run: |
-          aws lambda update-function-code --function-name trilobyte-api-master-dev-hello --zip-file fileb://./path/to/your/code.zip
+          aws lambda update-function-code --function-name trilobyte-api-master-dev-hello --zip-file fileb://D:\trilobyte-api-master.zip
