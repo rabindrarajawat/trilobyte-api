@@ -21,5 +21,4 @@ jobs:
           aws-region: ap-south-1
 
       - name: Deploy to Lambda
-        run: |
-         aws lambda update-function-code --function-name trilobyte-api-master-dev-hello --zip-file fileb://D:\trilobyte-api-main.zip   
+  run:
