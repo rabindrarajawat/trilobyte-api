@@ -28,7 +28,7 @@ jobs:
             --runtime nodejs18.x\
             --handler handler.hello \
             --role arn:aws:iam::861751345871:role/trilobyte-api-master-dev-ap-south-1-lambdaRole \
-            --code "ZipFile=fileb://<(echo YourInlineCode)"
+            --code "--zip-file://<(echo YourInlineCode)"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
